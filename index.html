@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- meta viewport is important for mobile view or other view than desktop for responsive web -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=“stylesheet” type=“text/css” href=“style.css”>
+    <title>Media Query and Responsive Size</title>
+</head>
+<body>
+    <!-- FROM HERE! -->
+    <!-- Remember div for whole line, but span just for whole text -->
+    <!-- Remember that class with space can be defined separately in CSS (refer to MMTWR3939) -->
+    <!-- When calling a 2-word class together in CSS, just use format .[Word1].[Word2]{} -->
+    <ul>
+        <li class="icon desktop"><h2 class="icon_color">Patrick</h2></li>
+        <!-- no class="icon_color" in mobile mode because h2 text color for desktop and mobile mode are different colors -->
+        <li class="icon mobile"><h2>P</h2></li>
+        <li class="desktop">Home</li>
+        <li class="desktop">Contact Us</li>
+        <li class="desktop">Sign In</li>
+        <li class="button_green">Get Started</li>
+    </ul>
+    <!-- first picture for full width screen 100% both in desktop and mobile -->
+    <div class="pic1">
+        <img src="https://mtv.mtvnimages.com/uri/mgid:ao:image:mtv.com:5394?quality=0.8&format=jpg" alt="">
+    </div>
+</body>
+</html>
