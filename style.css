@@ -1,0 +1,62 @@
+/* Element Center Trick */
+
+/* PART 1: Image only*/
+img{
+    /* it is recommended to use always percentage (%), 100% makes no need of horizontal scroll */
+    width:100%;
+    /* comment max-width below to set the maximum screen width of the pic1 for both desktop & mobile */
+    max-width: 627px; /* if this active, mobile full, desktop smaller */
+}
+
+/* make pic2 center align with smaller width in desktop mode and pic2 is portrait */
+.pic2{
+    /* because width of img is set by 100% above, use pic2's height */
+    height: auto;
+    /* display block to make the pic2 has its own entire line, see display property ss */
+    display: block;
+    /* make pic2 center aligned with margin 0 auto, margin 0 for vertical */
+    margin: 0 auto;
+}
+
+/* PART 2: With icon, text and image */
+.icon{
+    width:100px;
+    /* MUST if inline with text: inline-block */
+    display: inline-block;
+    /* because height of icon>text, icon will be the standard of vertical-align in the same row as text */
+    /* set middle if want icon is in the middle of row (div), otherwise top or bottom */
+    vertical-align: middle;
+}
+.text{
+    /* to make text in the same line as icon above */
+    display: inline-block;
+    /* set middle if want text next to the middle of icon (also row), otherwise top or bottom */
+    vertical-align: middle;
+}   
+
+/* PART 3: Make icon in the middle of a background image */
+/* fill in the background image */
+.fondation{
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/776/883/765/pure-ocean-blue-relaxing-nature-wallpaper-preview.jpg);
+    /* limit the height to the suitable screen height (Belinea screen) */
+    height: 450px;
+    /*  make the content of foundation (span/icon) center-aligned horizontally */
+    text-align: center;
+}
+/* dummy vertical center aligned, icon's shadow */
+.center-vertical{
+    vertical-align: middle;
+    /* make the height same as background/fondation */
+    height: 450px;
+    /* follow the line of the block of background/fondation */
+    display: inline-block;
+}
+/* don't forget to set the size and display of the icon */
+.icon{
+    width:150px;
+    /* MUST if inline with text: inline-block */
+    display: inline-block;
+    /* because height of icon>text, icon will be the standard of vertical-align in the same row as text */
+    /* set middle if want icon is in the middle of row (div), otherwise top or bottom */
+    vertical-align: middle;
+}
